@@ -1,0 +1,21 @@
+- Parsing:
+	- parsing of the env:
+		- Search for PATH
+		- Remove 'PATH='
+		- Split by ':'
+
+- Structure:
+	- int fd_infile;
+	- int fd_outfile;
+	- char **path;
+	- char *cmd1;
+	- char *cmd2;
+	- char **env;
+
+Notes:
+	- Input files (If !exists exit (error));
+	- Output file (If !exists create outfile);
+
+- Heredoc: check if can be done after main;
+
+./pipex infile cmd1 cmd2 outfile
